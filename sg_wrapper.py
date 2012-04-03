@@ -138,8 +138,8 @@ class Shotgun():
 		
 		return result
 
-	def sg_find_one(self, entityType, filters, fields):
-		return self._sg.find_one(entityType, filters, fields)
+	def sg_find_one(self, entityType, filters, fields, order=None):
+		return self._sg.find_one(entityType, filters, fields, order)
 
 	def sg_find(self, entityType, filters, fields):
 		return self._sg.find(entityType, filters, fields)
